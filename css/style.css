@@ -1,0 +1,72 @@
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  font-weight: 600;
+}
+
+img {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#clock {
+  font-size: 120px;
+  padding-top: 80px;
+  margin-bottom: 40px;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quote span:first-child {
+  margin-bottom: 7px;
+  font-size: 20px;
+}
+
+.todo-input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  outline: none;
+  font-size: 30px;
+  width: 400px;
+}
+
+.todo-input::placeholder {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+#todo-list span,
+#todo-list button {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#weather {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
