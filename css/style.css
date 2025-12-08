@@ -13,7 +13,7 @@ body {
 }
 
 img {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100vw;
   top: 0;
@@ -30,21 +30,27 @@ img {
 #quote {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
 }
 
 #quote span:first-child {
+  width: 500px;
   margin-bottom: 7px;
   font-size: 20px;
+}
+
+#quote span:last-child {
+  margin-right: 15px;
 }
 
 .todo-input {
   background: none;
   border: none;
-  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  border-bottom: 2px solid white;
   outline: none;
   font-size: 30px;
   width: 400px;
+  color: white;
 }
 
 .todo-input::placeholder {
@@ -69,4 +75,33 @@ button {
   position: fixed;
   top: 20px;
   right: 20px;
+}
+
+.type-name {
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  font-size: 30px;
+  width: 270px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.type-name::placeholder {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+#quote {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
 }
