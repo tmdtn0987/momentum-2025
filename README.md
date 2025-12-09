@@ -1,3 +1,3 @@
-# Vanila-js Momentum Update
+# Vanilla-js Momentum Update
 
 My cool momentum!
